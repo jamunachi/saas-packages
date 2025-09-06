@@ -1,0 +1,63 @@
+[
+  {
+    "doctype": "Package",
+    "package_name": "Accounting",
+    "description": "Core accounting workspace and finance documents",
+    "is_active": 1,
+    "granted_roles": [
+      {
+        "role": "Accounts User"
+      },
+      {
+        "role": "Accounts Manager"
+      }
+    ],
+    "allowed_workspaces": [
+      {
+        "workspace": "Accounts"
+      },
+      {
+        "workspace": "Accounts Reports"
+      }
+    ],
+    "allowed_doctypes": [
+      {
+        "document_type": "Sales Invoice"
+      }
+    ],
+    "package_domains": [
+      {
+        "domain": "Accounts"
+      }
+    ]
+  },
+  {
+    "doctype": "Package",
+    "package_name": "HR",
+    "description": "Employees, attendance, leaves, payroll",
+    "is_active": 1,
+    "granted_roles": [
+      {
+        "role": "HR User"
+      },
+      {
+        "role": "HR Manager"
+      }
+    ],
+    "allowed_workspaces": [
+      {
+        "workspace": "HR"
+      }
+    ],
+    "allowed_doctypes": [
+      {
+        "document_type": "Employee"
+      }
+    ],
+    "package_domains": [
+      {
+        "domain": "HR"
+      }
+    ]
+  }
+]
