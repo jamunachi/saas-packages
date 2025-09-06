@@ -6,7 +6,7 @@ build-backend = "setuptools.build_meta"
 name = "saas_packages"
 version = "0.1.0"
 description = "ERPNext SaaS packages + provisioning (roles/workspaces + per-site domains)"
-authors = [{name = "Your Company", email = "dev@yourco.com"}]
+authors = [{name = "Neotecy", email = "support@neotec.ai"}]
 readme = "README.md"
 license = {text = "MIT"}
 
