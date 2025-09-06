@@ -2,7 +2,10 @@ import frappe
 from frappe.utils import nowdate
 
 def get_customer_users(customer: str):
+<<<<<<< HEAD
     # Expect a custom Link field 'company' on User pointing to Company
+=======
+>>>>>>> fe44143 (Flatten repo: move app to repo root (app dir = saas_packages))
     return frappe.get_all("User", filters={"company": customer, "enabled": 1}, fields=["name"])
 
 def get_managed_roles():
@@ -10,9 +13,13 @@ def get_managed_roles():
     rows = getattr(settings, "managed_roles", []) or []
     roles = {r.role for r in rows if getattr(r, "role", None)}
     if not roles:
+<<<<<<< HEAD
         roles = {"Accounts User", "Accounts Manager", "HR User", "HR Manager",
                  "Sales User", "Sales Manager", "Projects User", "Projects Manager",
                  "Manufacturing User", "Manufacturing Manager"}
+=======
+        roles = {"Accounts User", "Accounts Manager", "HR User", "HR Manager"}
+>>>>>>> fe44143 (Flatten repo: move app to repo root (app dir = saas_packages))
     return roles
 
 def apply_roles_to_user(user: str, roles_to_keep: set):

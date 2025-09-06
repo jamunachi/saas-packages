@@ -19,11 +19,17 @@ def provision_site(customer: str, site: str, admin_password: str,
         _run(["bench", "--site", site, "install-app", "saas_packages"], cwd=bench)
     except Exception:
         pass
+<<<<<<< HEAD
 
     for k, v in {"country": country, "currency": currency, "language": language, "time_zone": timezone}.items():
         if v:
             _run(["bench", "--site", site, "set-config", k, cstr(v)], cwd=bench)
 
+=======
+    for k, v in {"country": country, "currency": currency, "language": language, "time_zone": timezone}.items():
+        if v:
+            _run(["bench", "--site", site, "set-config", k, cstr(v)], cwd=bench)
+>>>>>>> fe44143 (Flatten repo: move app to repo root (app dir = saas_packages))
     domains = domains or []
     if domains:
         code = f"""
@@ -34,7 +40,10 @@ frappe.db.commit()
 print('Enabled domains:', {domains!r})
 """
         _run(["bench", "--site", site, "execute", "frappe.utils.bench_helper.execute_code", "--kwargs", json.dumps({"code": code})], cwd=bench)
+<<<<<<< HEAD
 
+=======
+>>>>>>> fe44143 (Flatten repo: move app to repo root (app dir = saas_packages))
     return {"ok": True, "site": site, "domains": domains}
 
 def _run(cmd, cwd=None):

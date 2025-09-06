@@ -22,7 +22,10 @@
         </div>`;
       el.appendChild(card);
     });
+<<<<<<< HEAD
 
+=======
+>>>>>>> fe44143 (Flatten repo: move app to repo root (app dir = saas_packages))
     el.querySelectorAll('button[data-plan]').forEach(btn => {
       btn.addEventListener('click', async (e) => {
         const customer = document.getElementById('customer').value;

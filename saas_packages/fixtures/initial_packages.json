@@ -4,8 +4,11 @@
     "package_name": "Accounting",
     "description": "Core accounting workspace and finance documents",
     "is_active": 1,
+<<<<<<< HEAD
     "monthly_price": 49,
     "annual_price": 499,
+=======
+>>>>>>> fe44143 (Flatten repo: move app to repo root (app dir = saas_packages))
     "granted_roles": [
       {
         "role": "Accounts User"
@@ -25,6 +28,7 @@
     "allowed_doctypes": [
       {
         "document_type": "Sales Invoice"
+<<<<<<< HEAD
       },
       {
         "document_type": "Purchase Invoice"
@@ -40,6 +44,8 @@
       },
       {
         "document_type": "Account"
+=======
+>>>>>>> fe44143 (Flatten repo: move app to repo root (app dir = saas_packages))
       }
     ],
     "package_domains": [
@@ -51,10 +57,15 @@
   {
     "doctype": "Package",
     "package_name": "HR",
+<<<<<<< HEAD
     "description": "Employees, attendance, leaves, payroll setup and HR reports",
     "is_active": 1,
     "monthly_price": 39,
     "annual_price": 399,
+=======
+    "description": "Employees, attendance, leaves, payroll",
+    "is_active": 1,
+>>>>>>> fe44143 (Flatten repo: move app to repo root (app dir = saas_packages))
     "granted_roles": [
       {
         "role": "HR User"
@@ -66,14 +77,18 @@
     "allowed_workspaces": [
       {
         "workspace": "HR"
+<<<<<<< HEAD
       },
       {
         "workspace": "HR Reports"
+=======
+>>>>>>> fe44143 (Flatten repo: move app to repo root (app dir = saas_packages))
       }
     ],
     "allowed_doctypes": [
       {
         "document_type": "Employee"
+<<<<<<< HEAD
       },
       {
         "document_type": "Attendance"
@@ -86,6 +101,8 @@
       },
       {
         "document_type": "Salary Slip"
+=======
+>>>>>>> fe44143 (Flatten repo: move app to repo root (app dir = saas_packages))
       }
     ],
     "package_domains": [
@@ -93,6 +110,7 @@
         "domain": "HR"
       }
     ]
+<<<<<<< HEAD
   },
   {
     "doctype": "Package",
@@ -321,5 +339,7 @@
         "domain": "Manufacturing"
       }
     ]
+=======
+>>>>>>> fe44143 (Flatten repo: move app to repo root (app dir = saas_packages))
   }
 ]

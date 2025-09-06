@@ -1,5 +1,6 @@
 import frappe
 from frappe import _
+<<<<<<< HEAD
 from .utils import (
     get_customer_users, apply_roles_to_user, get_package_roles
 )
@@ -7,18 +8,31 @@ from .utils import (
 @frappe.whitelist(allow_guest=True)
 def get_public_packages():
     pkgs = frappe.get_all(
+=======
+from .utils import get_customer_users, apply_roles_to_user, get_package_roles
+
+@frappe.whitelist(allow_guest=True)
+def get_public_packages():
+    return frappe.get_all(
+>>>>>>> fe44143 (Flatten repo: move app to repo root (app dir = saas_packages))
         "Package",
         filters={"is_active": 1},
         fields=["name as package_name", "description", "monthly_price", "annual_price"]
     )
+<<<<<<< HEAD
     return pkgs
+=======
+>>>>>>> fe44143 (Flatten repo: move app to repo root (app dir = saas_packages))
 
 @frappe.whitelist()
 def set_plan(customer: str, package_name: str):
     pkg = frappe.get_doc("Package", package_name)
     if not pkg.is_active:
         frappe.throw(_("Selected package is not active."))
+<<<<<<< HEAD
 
+=======
+>>>>>>> fe44143 (Flatten repo: move app to repo root (app dir = saas_packages))
     plan = frappe.get_doc({
         "doctype": "Customer Plan",
         "customer": customer,
@@ -26,6 +40,7 @@ def set_plan(customer: str, package_name: str):
         "status": "Active"
     })
     plan.insert(ignore_permissions=True)
+<<<<<<< HEAD
 
     users = get_customer_users(customer)
     pkg_roles = get_package_roles(pkg)
@@ -33,6 +48,12 @@ def set_plan(customer: str, package_name: str):
     for u in users:
         apply_roles_to_user(u.name, pkg_roles)
 
+=======
+    users = get_customer_users(customer)
+    pkg_roles = get_package_roles(pkg)
+    for u in users:
+        apply_roles_to_user(u.name, pkg_roles)
+>>>>>>> fe44143 (Flatten repo: move app to repo root (app dir = saas_packages))
     frappe.get_doc({
         "doctype": "Plan Assignment",
         "customer": customer,
@@ -43,6 +64,7 @@ def set_plan(customer: str, package_name: str):
             "doctypes": [d.document_type for d in pkg.get("allowed_doctypes")]
         })
     }).insert(ignore_permissions=True)
+<<<<<<< HEAD
 
     frappe.db.commit()
     return {"ok": True}
@@ -57,3 +79,7 @@ def payment_webhook(session_id: str = None, **payload):
     if not (customer and package_name):
         frappe.throw(_("Missing customer or package in webhook payload."))
     return set_plan(customer=customer, package_name=package_name)
+=======
+    frappe.db.commit()
+    return {"ok": True}
+>>>>>>> fe44143 (Flatten repo: move app to repo root (app dir = saas_packages))

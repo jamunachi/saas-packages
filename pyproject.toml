@@ -4,9 +4,15 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "saas_packages"
+<<<<<<< HEAD
 version = "0.1.0"
 description = "ERPNext SaaS packages + provisioning (roles/workspaces + per-site domains)"
 authors = [{name = "Neotecy", email = "support@neotec.ai"}]
+=======
+version = "0.1.1"
+description = "ERPNext SaaS packages + provisioning"
+authors = [{name = "Your Company", email = "dev@yourco.com"}]
+>>>>>>> fe44143 (Flatten repo: move app to repo root (app dir = saas_packages))
 readme = "README.md"
 license = {text = "MIT"}
 

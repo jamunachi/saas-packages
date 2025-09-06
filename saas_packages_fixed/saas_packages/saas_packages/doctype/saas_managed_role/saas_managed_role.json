@@ -1,9 +1,0 @@
-{
-  "doctype": "DocType",
-  "name": "SaaS Managed Role",
-  "module": "SaaS Packages",
-  "istable": 1,
-  "fields": [
-    {"fieldname": "role", "label": "Role", "fieldtype": "Link", "options": "Role", "reqd": 1}
-  ]
-}

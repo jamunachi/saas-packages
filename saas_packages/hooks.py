@@ -3,7 +3,11 @@ from . import __version__ as app_version
 app_name = "saas_packages"
 app_title = "SaaS Packages"
 app_publisher = "Your Company"
+<<<<<<< HEAD
 app_description = "Package-based feature toggling + per-site provisioning for ERPNext"
+=======
+app_description = "Package-based feature toggling + per-site provisioning"
+>>>>>>> fe44143 (Flatten repo: move app to repo root (app dir = saas_packages))
 app_email = "dev@yourco.com"
 app_license = "MIT"
 
@@ -22,6 +26,7 @@ def _get_allowed_origins():
 
 allow_cors = _get_allowed_origins
 
+<<<<<<< HEAD
 fixtures = [
     {"dt": "Role", "filters": [["role_name", "in", [
         "Accounts User", "Accounts Manager",
@@ -32,6 +37,8 @@ fixtures = [
     ]]]},
 ]
 
+=======
+>>>>>>> fe44143 (Flatten repo: move app to repo root (app dir = saas_packages))
 scheduler_events = {
     "daily": [
         "saas_packages.utils.handle_plan_expiry"
