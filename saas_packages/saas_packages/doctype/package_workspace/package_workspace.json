@@ -1,0 +1,9 @@
+{
+  "doctype": "DocType",
+  "name": "Package Workspace",
+  "module": "SaaS Packages",
+  "istable": 1,
+  "fields": [
+    {"fieldname": "workspace", "label": "Workspace", "fieldtype": "Link", "options": "Workspace", "reqd": 1}
+  ]
+}

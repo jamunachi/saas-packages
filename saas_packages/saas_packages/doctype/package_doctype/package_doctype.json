@@ -1,0 +1,9 @@
+{
+  "doctype": "DocType",
+  "name": "Package DocType",
+  "module": "SaaS Packages",
+  "istable": 1,
+  "fields": [
+    {"fieldname": "document_type", "label": "DocType", "fieldtype": "Link", "options": "DocType", "reqd": 1}
+  ]
+}

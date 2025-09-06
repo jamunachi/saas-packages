@@ -1,0 +1,14 @@
+[build-system]
+requires = ["setuptools>=65", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "saas_packages"
+version = "0.1.0"
+description = "ERPNext SaaS packages + provisioning (roles/workspaces + per-site domains)"
+authors = [{name = "Your Company", email = "dev@yourco.com"}]
+readme = "README.md"
+license = {text = "MIT"}
+
+[tool.setuptools.packages.find]
+where = ["." ]

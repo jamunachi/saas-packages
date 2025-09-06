@@ -1,0 +1,13 @@
+{% extends "templates/web.html" %}
+{% block title %}Plans{% endblock %}
+{% block page_content %}
+<div class="container">
+  <h1>Select a Plan</h1>
+  <div id="plans" class="grid"></div>
+  <div class="mt-4">
+    <label>Customer/Company</label>
+    <input id="customer" class="form-control" placeholder="ACME LLC" />
+  </div>
+</div>
+<script src="/assets/saas_packages/js/plans.js"></script>
+{% endblock %}

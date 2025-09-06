@@ -1,0 +1,27 @@
+{
+  "doctype": "DocType",
+  "name": "SaaS Settings",
+  "module": "SaaS Packages",
+  "issingle": 1,
+  "fields": [
+    {"fieldname": "section_api", "label": "API & Security", "fieldtype": "Section Break"},
+    {"fieldname": "public_api_key", "label": "Public API Key", "fieldtype": "Password"},
+    {"fieldname": "secret_api_key", "label": "Secret API Key", "fieldtype": "Password"},
+    {"fieldname": "payment_webhook_secret", "label": "Payment Webhook Secret", "fieldtype": "Password"},
+    {"fieldname": "allowed_origins", "label": "Allowed Origins (CORS)", "fieldtype": "Small Text", "description": "One origin per line"},
+
+    {"fieldname": "section_behavior", "label": "Behavior", "fieldtype": "Section Break"},
+    {"fieldname": "tenancy_mode", "label": "Tenancy Mode", "fieldtype": "Select", "options": "Single Site / Multi Company\nPer-Site (multi-tenant)", "default": "Single Site / Multi Company"},
+    {"fieldname": "user_company_field", "label": "User Company Field", "fieldtype": "Data", "default": "company", "description": "Field on User that links to Company"},
+    {"fieldname": "managed_roles", "label": "Package-Managed Roles", "fieldtype": "Table", "options": "SaaS Managed Role"},
+
+    {"fieldname": "section_defaults", "label": "Defaults", "fieldtype": "Section Break"},
+    {"fieldname": "base_role", "label": "Base Role (All Plans)", "fieldtype": "Link", "options": "Role"},
+
+    {"fieldname": "section_site_template", "label": "Site Template", "fieldtype": "Section Break"},
+    {"fieldname": "site_template", "label": "Site Template JSON", "fieldtype": "Long Text", "description": "Optional JSON: currency, language, country, timezone"}
+  ],
+  "permissions": [
+    {"role": "System Manager", "read": 1, "write": 1}
+  ]
+}

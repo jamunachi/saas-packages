@@ -1,0 +1,325 @@
+[
+  {
+    "doctype": "Package",
+    "package_name": "Accounting",
+    "description": "Core accounting workspace and finance documents",
+    "is_active": 1,
+    "monthly_price": 49,
+    "annual_price": 499,
+    "granted_roles": [
+      {
+        "role": "Accounts User"
+      },
+      {
+        "role": "Accounts Manager"
+      }
+    ],
+    "allowed_workspaces": [
+      {
+        "workspace": "Accounts"
+      },
+      {
+        "workspace": "Accounts Reports"
+      }
+    ],
+    "allowed_doctypes": [
+      {
+        "document_type": "Sales Invoice"
+      },
+      {
+        "document_type": "Purchase Invoice"
+      },
+      {
+        "document_type": "Payment Entry"
+      },
+      {
+        "document_type": "Journal Entry"
+      },
+      {
+        "document_type": "GL Entry"
+      },
+      {
+        "document_type": "Account"
+      }
+    ],
+    "package_domains": [
+      {
+        "domain": "Accounts"
+      }
+    ]
+  },
+  {
+    "doctype": "Package",
+    "package_name": "HR",
+    "description": "Employees, attendance, leaves, payroll setup and HR reports",
+    "is_active": 1,
+    "monthly_price": 39,
+    "annual_price": 399,
+    "granted_roles": [
+      {
+        "role": "HR User"
+      },
+      {
+        "role": "HR Manager"
+      }
+    ],
+    "allowed_workspaces": [
+      {
+        "workspace": "HR"
+      },
+      {
+        "workspace": "HR Reports"
+      }
+    ],
+    "allowed_doctypes": [
+      {
+        "document_type": "Employee"
+      },
+      {
+        "document_type": "Attendance"
+      },
+      {
+        "document_type": "Leave Application"
+      },
+      {
+        "document_type": "Salary Structure"
+      },
+      {
+        "document_type": "Salary Slip"
+      }
+    ],
+    "package_domains": [
+      {
+        "domain": "HR"
+      }
+    ]
+  },
+  {
+    "doctype": "Package",
+    "package_name": "Sales CRM",
+    "description": "Leads, opportunities, quotations, and sales workflows",
+    "is_active": 1,
+    "monthly_price": 59,
+    "annual_price": 599,
+    "granted_roles": [
+      {
+        "role": "Sales User"
+      },
+      {
+        "role": "Sales Manager"
+      }
+    ],
+    "allowed_workspaces": [
+      {
+        "workspace": "CRM"
+      },
+      {
+        "workspace": "Selling"
+      }
+    ],
+    "allowed_doctypes": [
+      {
+        "document_type": "Lead"
+      },
+      {
+        "document_type": "Opportunity"
+      },
+      {
+        "document_type": "Quotation"
+      },
+      {
+        "document_type": "Sales Order"
+      }
+    ],
+    "package_domains": [
+      {
+        "domain": "CRM"
+      },
+      {
+        "domain": "Selling"
+      }
+    ]
+  },
+  {
+    "doctype": "Package",
+    "package_name": "Projects",
+    "description": "Projects, tasks, timesheets, project reports",
+    "is_active": 1,
+    "monthly_price": 29,
+    "annual_price": 299,
+    "granted_roles": [
+      {
+        "role": "Projects User"
+      },
+      {
+        "role": "Projects Manager"
+      }
+    ],
+    "allowed_workspaces": [
+      {
+        "workspace": "Projects"
+      }
+    ],
+    "allowed_doctypes": [
+      {
+        "document_type": "Project"
+      },
+      {
+        "document_type": "Task"
+      },
+      {
+        "document_type": "Timesheet"
+      }
+    ],
+    "package_domains": [
+      {
+        "domain": "Projects"
+      }
+    ]
+  },
+  {
+    "doctype": "Package",
+    "package_name": "Manufacturing",
+    "description": "BOMs, work orders, production planning, stock control",
+    "is_active": 1,
+    "monthly_price": 79,
+    "annual_price": 799,
+    "granted_roles": [
+      {
+        "role": "Manufacturing User"
+      },
+      {
+        "role": "Manufacturing Manager"
+      }
+    ],
+    "allowed_workspaces": [
+      {
+        "workspace": "Manufacturing"
+      },
+      {
+        "workspace": "Stock"
+      }
+    ],
+    "allowed_doctypes": [
+      {
+        "document_type": "BOM"
+      },
+      {
+        "document_type": "Work Order"
+      },
+      {
+        "document_type": "Production Plan"
+      },
+      {
+        "document_type": "Item"
+      },
+      {
+        "document_type": "Warehouse"
+      }
+    ],
+    "package_domains": [
+      {
+        "domain": "Manufacturing"
+      },
+      {
+        "domain": "Stock"
+      }
+    ]
+  },
+  {
+    "doctype": "Package",
+    "package_name": "Full ERP",
+    "description": "All major ERPNext modules enabled",
+    "is_active": 1,
+    "monthly_price": 149,
+    "annual_price": 1499,
+    "granted_roles": [
+      {
+        "role": "Accounts User"
+      },
+      {
+        "role": "Accounts Manager"
+      },
+      {
+        "role": "HR User"
+      },
+      {
+        "role": "HR Manager"
+      },
+      {
+        "role": "Sales User"
+      },
+      {
+        "role": "Sales Manager"
+      },
+      {
+        "role": "Projects User"
+      },
+      {
+        "role": "Projects Manager"
+      },
+      {
+        "role": "Manufacturing User"
+      },
+      {
+        "role": "Manufacturing Manager"
+      }
+    ],
+    "allowed_workspaces": [
+      {
+        "workspace": "Accounts"
+      },
+      {
+        "workspace": "Accounts Reports"
+      },
+      {
+        "workspace": "HR"
+      },
+      {
+        "workspace": "HR Reports"
+      },
+      {
+        "workspace": "CRM"
+      },
+      {
+        "workspace": "Selling"
+      },
+      {
+        "workspace": "Projects"
+      },
+      {
+        "workspace": "Manufacturing"
+      },
+      {
+        "workspace": "Stock"
+      }
+    ],
+    "allowed_doctypes": [],
+    "package_domains": [
+      {
+        "domain": "Accounts"
+      },
+      {
+        "domain": "HR"
+      },
+      {
+        "domain": "CRM"
+      },
+      {
+        "domain": "Selling"
+      },
+      {
+        "domain": "Buying"
+      },
+      {
+        "domain": "Stock"
+      },
+      {
+        "domain": "Projects"
+      },
+      {
+        "domain": "Manufacturing"
+      }
+    ]
+  }
+]
