@@ -10,7 +10,9 @@ def provision_site(customer: str, site: str, admin_password: str,
                    currency: str | None = None,
                    language: str | None = None,
                    timezone: str | None = None):
+    """Create a new site and enable the given ERPNext/Frappe domains."""
     bench = os.getcwd()
+
     _run(["bench", "new-site", site, "--admin-password", admin_password, "--no-mariadb-socket"], cwd=bench)
     _run(["bench", "--site", site, "install-app", "frappe"], cwd=bench)
     if install_erpnext:
@@ -19,31 +21,23 @@ def provision_site(customer: str, site: str, admin_password: str,
         _run(["bench", "--site", site, "install-app", "saas_packages"], cwd=bench)
     except Exception:
         pass
-<<<<<<< HEAD
 
     for k, v in {"country": country, "currency": currency, "language": language, "time_zone": timezone}.items():
         if v:
             _run(["bench", "--site", site, "set-config", k, cstr(v)], cwd=bench)
 
-=======
-    for k, v in {"country": country, "currency": currency, "language": language, "time_zone": timezone}.items():
-        if v:
-            _run(["bench", "--site", site, "set-config", k, cstr(v)], cwd=bench)
->>>>>>> fe44143 (Flatten repo: move app to repo root (app dir = saas_packages))
     domains = domains or []
     if domains:
         code = f"""
 import frappe
 from frappe.core.doctype.domain_settings.domain_settings import set_active_domains
-set_active_domains({domains!r})
+set_active_domains({repr(domains)})
 frappe.db.commit()
-print('Enabled domains:', {domains!r})
+print('Enabled domains:', {repr(domains)})
 """
-        _run(["bench", "--site", site, "execute", "frappe.utils.bench_helper.execute_code", "--kwargs", json.dumps({"code": code})], cwd=bench)
-<<<<<<< HEAD
+        _run(["bench", "--site", site, "execute", "frappe.utils.bench_helper.execute_code",
+              "--kwargs", json.dumps({"code": code})], cwd=bench)
 
-=======
->>>>>>> fe44143 (Flatten repo: move app to repo root (app dir = saas_packages))
     return {"ok": True, "site": site, "domains": domains}
 
 def _run(cmd, cwd=None):
