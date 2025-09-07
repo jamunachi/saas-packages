@@ -4,113 +4,53 @@
     "package_name": "Accounting",
     "description": "Core accounting workspace and finance documents",
     "is_active": 1,
-<<<<<<< HEAD
     "monthly_price": 49,
     "annual_price": 499,
-=======
->>>>>>> fe44143 (Flatten repo: move app to repo root (app dir = saas_packages))
     "granted_roles": [
-      {
-        "role": "Accounts User"
-      },
-      {
-        "role": "Accounts Manager"
-      }
+      { "role": "Accounts User" },
+      { "role": "Accounts Manager" }
     ],
     "allowed_workspaces": [
-      {
-        "workspace": "Accounts"
-      },
-      {
-        "workspace": "Accounts Reports"
-      }
+      { "workspace": "Accounts" },
+      { "workspace": "Accounts Reports" }
     ],
     "allowed_doctypes": [
-      {
-        "document_type": "Sales Invoice"
-<<<<<<< HEAD
-      },
-      {
-        "document_type": "Purchase Invoice"
-      },
-      {
-        "document_type": "Payment Entry"
-      },
-      {
-        "document_type": "Journal Entry"
-      },
-      {
-        "document_type": "GL Entry"
-      },
-      {
-        "document_type": "Account"
-=======
->>>>>>> fe44143 (Flatten repo: move app to repo root (app dir = saas_packages))
-      }
+      { "document_type": "Sales Invoice" },
+      { "document_type": "Purchase Invoice" },
+      { "document_type": "Payment Entry" },
+      { "document_type": "Journal Entry" },
+      { "document_type": "GL Entry" },
+      { "document_type": "Account" }
     ],
     "package_domains": [
-      {
-        "domain": "Accounts"
-      }
+      { "domain": "Accounts" }
     ]
   },
   {
     "doctype": "Package",
     "package_name": "HR",
-<<<<<<< HEAD
-    "description": "Employees, attendance, leaves, payroll setup and HR reports",
+    "description": "Employees, attendance, leaves, payroll",
     "is_active": 1,
     "monthly_price": 39,
     "annual_price": 399,
-=======
-    "description": "Employees, attendance, leaves, payroll",
-    "is_active": 1,
->>>>>>> fe44143 (Flatten repo: move app to repo root (app dir = saas_packages))
     "granted_roles": [
-      {
-        "role": "HR User"
-      },
-      {
-        "role": "HR Manager"
-      }
+      { "role": "HR User" },
+      { "role": "HR Manager" }
     ],
     "allowed_workspaces": [
-      {
-        "workspace": "HR"
-<<<<<<< HEAD
-      },
-      {
-        "workspace": "HR Reports"
-=======
->>>>>>> fe44143 (Flatten repo: move app to repo root (app dir = saas_packages))
-      }
+      { "workspace": "HR" },
+      { "workspace": "HR Reports" }
     ],
     "allowed_doctypes": [
-      {
-        "document_type": "Employee"
-<<<<<<< HEAD
-      },
-      {
-        "document_type": "Attendance"
-      },
-      {
-        "document_type": "Leave Application"
-      },
-      {
-        "document_type": "Salary Structure"
-      },
-      {
-        "document_type": "Salary Slip"
-=======
->>>>>>> fe44143 (Flatten repo: move app to repo root (app dir = saas_packages))
-      }
+      { "document_type": "Employee" },
+      { "document_type": "Attendance" },
+      { "document_type": "Leave Application" },
+      { "document_type": "Salary Structure" },
+      { "document_type": "Salary Slip" }
     ],
     "package_domains": [
-      {
-        "domain": "HR"
-      }
+      { "domain": "HR" }
     ]
-<<<<<<< HEAD
   },
   {
     "doctype": "Package",
@@ -120,42 +60,22 @@
     "monthly_price": 59,
     "annual_price": 599,
     "granted_roles": [
-      {
-        "role": "Sales User"
-      },
-      {
-        "role": "Sales Manager"
-      }
+      { "role": "Sales User" },
+      { "role": "Sales Manager" }
     ],
     "allowed_workspaces": [
-      {
-        "workspace": "CRM"
-      },
-      {
-        "workspace": "Selling"
-      }
+      { "workspace": "CRM" },
+      { "workspace": "Selling" }
     ],
     "allowed_doctypes": [
-      {
-        "document_type": "Lead"
-      },
-      {
-        "document_type": "Opportunity"
-      },
-      {
-        "document_type": "Quotation"
-      },
-      {
-        "document_type": "Sales Order"
-      }
+      { "document_type": "Lead" },
+      { "document_type": "Opportunity" },
+      { "document_type": "Quotation" },
+      { "document_type": "Sales Order" }
     ],
     "package_domains": [
-      {
-        "domain": "CRM"
-      },
-      {
-        "domain": "Selling"
-      }
+      { "domain": "CRM" },
+      { "domain": "Selling" }
     ]
   },
   {
@@ -166,33 +86,19 @@
     "monthly_price": 29,
     "annual_price": 299,
     "granted_roles": [
-      {
-        "role": "Projects User"
-      },
-      {
-        "role": "Projects Manager"
-      }
+      { "role": "Projects User" },
+      { "role": "Projects Manager" }
     ],
     "allowed_workspaces": [
-      {
-        "workspace": "Projects"
-      }
+      { "workspace": "Projects" }
     ],
     "allowed_doctypes": [
-      {
-        "document_type": "Project"
-      },
-      {
-        "document_type": "Task"
-      },
-      {
-        "document_type": "Timesheet"
-      }
+      { "document_type": "Project" },
+      { "document_type": "Task" },
+      { "document_type": "Timesheet" }
     ],
     "package_domains": [
-      {
-        "domain": "Projects"
-      }
+      { "domain": "Projects" }
     ]
   },
   {
@@ -203,45 +109,70 @@
     "monthly_price": 79,
     "annual_price": 799,
     "granted_roles": [
-      {
-        "role": "Manufacturing User"
-      },
-      {
-        "role": "Manufacturing Manager"
-      }
+      { "role": "Manufacturing User" },
+      { "role": "Manufacturing Manager" }
     ],
     "allowed_workspaces": [
-      {
-        "workspace": "Manufacturing"
-      },
-      {
-        "workspace": "Stock"
-      }
+      { "workspace": "Manufacturing" },
+      { "workspace": "Stock" }
     ],
     "allowed_doctypes": [
-      {
-        "document_type": "BOM"
-      },
-      {
-        "document_type": "Work Order"
-      },
-      {
-        "document_type": "Production Plan"
-      },
-      {
-        "document_type": "Item"
-      },
-      {
-        "document_type": "Warehouse"
-      }
+      { "document_type": "BOM" },
+      { "document_type": "Work Order" },
+      { "document_type": "Production Plan" },
+      { "document_type": "Item" },
+      { "document_type": "Warehouse" }
     ],
     "package_domains": [
-      {
-        "domain": "Manufacturing"
-      },
-      {
-        "domain": "Stock"
-      }
+      { "domain": "Manufacturing" },
+      { "domain": "Stock" }
+    ]
+  },
+  {
+    "doctype": "Package",
+    "package_name": "Education",
+    "description": "Students, programs, courses, fees, and education workflows",
+    "is_active": 1,
+    "monthly_price": 69,
+    "annual_price": 699,
+    "granted_roles": [
+      { "role": "Academics User" },
+      { "role": "Academics Manager" }
+    ],
+    "allowed_workspaces": [
+      { "workspace": "Education" }
+    ],
+    "allowed_doctypes": [
+      { "document_type": "Student" },
+      { "document_type": "Program" },
+      { "document_type": "Course" },
+      { "document_type": "Fees" }
+    ],
+    "package_domains": [
+      { "domain": "Education" }
+    ]
+  },
+  {
+    "doctype": "Package",
+    "package_name": "Healthcare",
+    "description": "Patient, appointments, clinical procedures, healthcare workflows",
+    "is_active": 1,
+    "monthly_price": 89,
+    "annual_price": 899,
+    "granted_roles": [
+      { "role": "Healthcare User" },
+      { "role": "Healthcare Administrator" }
+    ],
+    "allowed_workspaces": [
+      { "workspace": "Healthcare" }
+    ],
+    "allowed_doctypes": [
+      { "document_type": "Patient" },
+      { "document_type": "Healthcare Service Unit" },
+      { "document_type": "Appointment" }
+    ],
+    "package_domains": [
+      { "domain": "Healthcare" }
     ]
   },
   {
@@ -252,94 +183,24 @@
     "monthly_price": 149,
     "annual_price": 1499,
     "granted_roles": [
-      {
-        "role": "Accounts User"
-      },
-      {
-        "role": "Accounts Manager"
-      },
-      {
-        "role": "HR User"
-      },
-      {
-        "role": "HR Manager"
-      },
-      {
-        "role": "Sales User"
-      },
-      {
-        "role": "Sales Manager"
-      },
-      {
-        "role": "Projects User"
-      },
-      {
-        "role": "Projects Manager"
-      },
-      {
-        "role": "Manufacturing User"
-      },
-      {
-        "role": "Manufacturing Manager"
-      }
+      { "role": "Accounts User" }, { "role": "Accounts Manager" },
+      { "role": "HR User" }, { "role": "HR Manager" },
+      { "role": "Sales User" }, { "role": "Sales Manager" },
+      { "role": "Projects User" }, { "role": "Projects Manager" },
+      { "role": "Manufacturing User" }, { "role": "Manufacturing Manager" }
     ],
     "allowed_workspaces": [
-      {
-        "workspace": "Accounts"
-      },
-      {
-        "workspace": "Accounts Reports"
-      },
-      {
-        "workspace": "HR"
-      },
-      {
-        "workspace": "HR Reports"
-      },
-      {
-        "workspace": "CRM"
-      },
-      {
-        "workspace": "Selling"
-      },
-      {
-        "workspace": "Projects"
-      },
-      {
-        "workspace": "Manufacturing"
-      },
-      {
-        "workspace": "Stock"
-      }
+      { "workspace": "Accounts" }, { "workspace": "Accounts Reports" },
+      { "workspace": "HR" }, { "workspace": "HR Reports" },
+      { "workspace": "CRM" }, { "workspace": "Selling" },
+      { "workspace": "Projects" }, { "workspace": "Manufacturing" }, { "workspace": "Stock" }
     ],
     "allowed_doctypes": [],
     "package_domains": [
-      {
-        "domain": "Accounts"
-      },
-      {
-        "domain": "HR"
-      },
-      {
-        "domain": "CRM"
-      },
-      {
-        "domain": "Selling"
-      },
-      {
-        "domain": "Buying"
-      },
-      {
-        "domain": "Stock"
-      },
-      {
-        "domain": "Projects"
-      },
-      {
-        "domain": "Manufacturing"
-      }
+      { "domain": "Accounts" }, { "domain": "HR" },
+      { "domain": "CRM" }, { "domain": "Selling" },
+      { "domain": "Buying" }, { "domain": "Stock" },
+      { "domain": "Projects" }, { "domain": "Manufacturing" }
     ]
-=======
->>>>>>> fe44143 (Flatten repo: move app to repo root (app dir = saas_packages))
   }
 ]
