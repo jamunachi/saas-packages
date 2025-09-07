@@ -1,6 +1,7 @@
 [
   {
     "doctype": "Package",
+    "name": "Accounting",
     "package_name": "Accounting",
     "description": "Core accounting workspace and finance documents",
     "is_active": 1,
@@ -28,6 +29,7 @@
   },
   {
     "doctype": "Package",
+    "name": "HR",
     "package_name": "HR",
     "description": "Employees, attendance, leaves, payroll",
     "is_active": 1,
@@ -54,6 +56,7 @@
   },
   {
     "doctype": "Package",
+    "name": "Sales CRM",
     "package_name": "Sales CRM",
     "description": "Leads, opportunities, quotations, and sales workflows",
     "is_active": 1,
@@ -80,6 +83,7 @@
   },
   {
     "doctype": "Package",
+    "name": "Projects",
     "package_name": "Projects",
     "description": "Projects, tasks, timesheets, project reports",
     "is_active": 1,
@@ -103,6 +107,7 @@
   },
   {
     "doctype": "Package",
+    "name": "Manufacturing",
     "package_name": "Manufacturing",
     "description": "BOMs, work orders, production planning, stock control",
     "is_active": 1,
@@ -130,6 +135,7 @@
   },
   {
     "doctype": "Package",
+    "name": "Education",
     "package_name": "Education",
     "description": "Students, programs, courses, fees, and education workflows",
     "is_active": 1,
@@ -154,6 +160,7 @@
   },
   {
     "doctype": "Package",
+    "name": "Healthcare",
     "package_name": "Healthcare",
     "description": "Patient, appointments, clinical procedures, healthcare workflows",
     "is_active": 1,
@@ -177,6 +184,7 @@
   },
   {
     "doctype": "Package",
+    "name": "Full ERP",
     "package_name": "Full ERP",
     "description": "All major ERPNext modules enabled",
     "is_active": 1,
